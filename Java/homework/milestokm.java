@@ -5,8 +5,7 @@ public class milestokm {
         System.out.println("enter miles: ");
         double miles = ui.nextDouble();
         double km =  (double)miles*1.6;
-        System.out.println(miles+" miles is "+km+" kilometers");
-        System.out.format(miles+" miles is "+km+" kilometers", "%.2f", km);
+        System.out.printf(" Km : %.2f%n",km);
         ui.close();
     }
 }

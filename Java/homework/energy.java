@@ -9,7 +9,7 @@ public class energy {
         System.out.println("Enter the inital temperature: ");
         double last= ui.nextDouble();
         double q =  (double)m*(last-inital)*4184;
-        System.out.println("the energy needed is "+q);
+        System.out.printf("energy needed: %.2f%n",q);
         //System.out.format(miles+" miles is "+km+" kilometers", "%.2f", km);
         ui.close();
     }
