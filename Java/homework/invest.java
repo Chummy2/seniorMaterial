@@ -9,11 +9,7 @@ public class invest {
         double annual= ui.nextDouble();
         System.out.println("Enter numbers of years: ");
         double years= ui.nextDouble();
-        double newyears=Math.pow(years,12);
-        System.out.println(newyears);
-        double future = investment*(1+annual)*newyears;
-        System.out.println("Future Value: $" + (Math.round(investment*Math.pow((1 + (interest/1200)), (years*12)))));
-        System.out.println("future value is "+future);
+        System.out.println("Future Value: $" + (Math.round(investment*Math.pow((1 + (annual/1200)), (years*12)))));
         //System.out.format(miles+" miles is "+km+" kilometers", "%.2f", km);
         ui.close();
     }
