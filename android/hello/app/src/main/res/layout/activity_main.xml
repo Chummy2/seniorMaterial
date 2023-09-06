@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- similar to html commenting-->
+    <!--    right above the widgets for comments
+                this is a multi
+                line    -->
+
+    <TextView
+        android:id="@+id/introtextView"
+        android:layout_width="347dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="43dp"
+        android:text="Hello Android"
+        android:textColor="#FF0000"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nametextView"
+        android:layout_width="218dp"
+        android:layout_height="71dp"
+
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="178dp"
+        android:text="Hello, what is your name"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/answertextView"
+        app:layout_constraintEnd_toEndOf="@+id/questionText"
+        app:layout_constraintTop_toTopOf="@+id/introtextView" />
+
+    <EditText
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/nametextView" />
+
+    <TextView
+        android:id="@+id/answertextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/questionText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:backgroundTint="#00FF00"
+        android:text="enter"
+        android:onClick="sayHello"
+        app:layout_constraintBaseline_toBaselineOf="@+id/questionText"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
