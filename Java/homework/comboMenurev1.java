@@ -127,12 +127,16 @@ public class comboMenurev1 {
         System.out.println("do you want ketchup? (y/n)");
         String wantKetchup=ui.next();
         if (wantKetchup.equalsIgnoreCase("n")){ 
-            break;
+            
     }
         else if (wantKetchup.equalsIgnoreCase("y")){
             while (!ketchupDone.equals ("yes")){
                 System.out.println("how many? ($0.25 each)");
                 Double ketchup=(double)ui.nextDouble();
+                ketchup=(double)ketchup*0.25;
+                cost=cost+ketchup;
+                ketchupDone="yes";
+
 
         }}
         System.out.println("are you done? (y/n)");
@@ -144,9 +148,12 @@ public class comboMenurev1 {
             drinkDone="no";
         }
         else if (actullDone.equalsIgnoreCase("y")){
+            System.out.println("pretax cost: "+cost);
+            Double tax=cost*0.07;
+            tax=tax+cost;
+            System.out.println("after tax: "+tax);
             reallyDone="yes";
         }
         }
-        System.out.println(cost);
     }
 }
