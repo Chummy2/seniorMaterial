@@ -10,6 +10,9 @@ public class comboMenurev1 {
     String drink="";
     String childSize="";
     String ketchupDone="no";
+    String sandwichDiscount="no";
+    String friesDiscount="no";
+    String drinkDiscount="no";
     double cost=0.0;
     Scanner ui = new Scanner(System.in);
     String reallyDone="";
@@ -21,6 +24,7 @@ public class comboMenurev1 {
                 break;
             }
             else if (wantSandwich.equalsIgnoreCase("y")){
+                sandwichDiscount="yes";
                 while (!sandwich.matches("cbt")){
                     System.out.println("Please type c or b or t");
                     System.out.println("which sandwich would you like: chicken $5.25, beef $6.25, tofu $5.75)");
@@ -55,6 +59,7 @@ public class comboMenurev1 {
                     break;
                 }
                 else if (wantFries.equalsIgnoreCase("y")){
+                    friesDiscount="yes";
                     while (!fries.matches("cbt")){
                         System.out.println("Please type s or m or l");
                         System.out.println("which fry size would you like: small $1.00, medium $1.50, large $2.00)");
@@ -86,6 +91,7 @@ public class comboMenurev1 {
                     break;
             }
             else if (wantDrink.equalsIgnoreCase("y")){
+                drinkDiscount="yes";
                 while (!drinkDone.matches("yes")){
                     System.out.println("Please type s or m or l");
                     System.out.println("which drink size would you like: small $1.00, medium $1.50, large $2.00)");
@@ -148,11 +154,27 @@ public class comboMenurev1 {
             drinkDone="no";
         }
         else if (actullDone.equalsIgnoreCase("y")){
-            System.out.println("pretax cost: "+cost);
-            Double tax=cost*0.07;
-            tax=tax+cost;
-            System.out.println("after tax: "+tax);
-            reallyDone="yes";
+            if (sandwichDiscount.equals("yes") && friesDiscount.equals("yes") && drinkDiscount.equals("yes")  ){
+                cost=cost-1;
+                System.out.println("pretax cost: "+cost);
+                Double tax=cost*0.07;
+                tax=tax+cost;
+                System.out.println(tax);
+                tax=(double)Math.round(tax*100)/100;
+                System.out.println(tax);
+                System.out.println("after tax: "+tax);
+                reallyDone="yes";
+            }
+            else{
+                System.out.println("pretax cost: "+cost);
+                Double tax=cost*0.07;
+                tax=tax+cost;
+                System.out.println(tax);
+                tax=(double)Math.round(tax*100)/100;
+                System.out.println(tax);
+                System.out.println("after tax: "+tax);
+                reallyDone="yes";
+            }
         }
         }
     }
