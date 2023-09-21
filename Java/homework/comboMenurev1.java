@@ -1,13 +1,6 @@
 import java.util.Scanner;
 public class comboMenurev1 {
-    public static boolean isNotNumeric(String str) {
-        try {
-            Double.parseDouble(str);
-            return false; // It can be parsed as a double, so it's a number
-        } catch (NumberFormatException e) {
-            return true; // Parsing failed, it's not a number
-        }
-    }
+
     public static void main(String[] args) {
     String sandwichDone="no";
     String friesDone="no";
@@ -157,14 +150,14 @@ public class comboMenurev1 {
                 while (!ketchupDone.equals ("yes")){
                     System.out.println("how many? ($0.25 each)");
                     Double ketchup=(double)ui.nextDouble();
-                    if (ketchup<0){
+                    if (ketchup>0){
                         ketchup=(double)ketchup*0.25;
                         cost=cost+ketchup;
                         ketchupDone="yes";
                         ketchupDone2="yes";
                         wantKetchup2="y";
                     }
-                    else if (ketchup>0){
+                    else if (ketchup<0){
                         System.out.println("Input a number higher then 1");
                     }
         }}}
@@ -213,19 +206,19 @@ public class comboMenurev1 {
         else if (actullDone.equalsIgnoreCase("y")){
             String summary = "Order " + orderNumber + " Summary:\n";
             if (!finalSandwich.isEmpty()) {
-                summary += "Sandwich: " + finalSandwich + "\n";
+                summary += "\t"+"Sandwich: " + finalSandwich + "\n";
             }
             if (!finalFry.isEmpty()) {
-                summary += "Fries: " + finalFry + "\n";
+                summary += "\t"+"Fries: " + finalFry + "\n";
             }
             if (!finalDrink.isEmpty()) {
-                summary += "Drink: " + finalDrink+ "\n";
+                summary += "\t"+"Drink: " + finalDrink+ "\n";
             }
             if (!finalChildSize.isEmpty()) {
-                summary += "Child Size Drink: " + finalChildSize + "\n";
+                summary += "\t"+"Child Size Drink: " + finalChildSize + "\n";
             }
             if (wantKetchup2.equalsIgnoreCase("y")) {
-                summary += "Ketchup: Yes\n";
+                summary += "\t"+"Ketchup: Yes\n";
             }
 
             if (sandwichDiscount.equals("yes") && friesDiscount.equals("yes") && drinkDiscount.equals("yes")) {
