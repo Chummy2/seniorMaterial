@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class comboMenurev1 {
     public static void main(String[] args) {
     String sandwichDone="no";
@@ -10,13 +9,21 @@ public class comboMenurev1 {
     String drink="";
     String childSize="";
     String ketchupDone="no";
+    String ketchupDone2="no";
     String sandwichDiscount="no";
     String friesDiscount="no";
     String drinkDiscount="no";
     double cost=0.0;
+    int orderNumber = 1;
+    String allOrders = "";
+    String finalSandwich="";
+    String finalFry="";
+    String finalDrink="";
+    String finalChildSize="";
     Scanner ui = new Scanner(System.in);
     String reallyDone="";
     while (!reallyDone.equals ("yes")){
+        System.out.println("Order " + orderNumber + ":");
         while (!sandwichDone.equals ("yes")){
             System.out.println("Do you want a sandwich? (y/n)");
             String wantSandwich=ui.next();
@@ -32,20 +39,20 @@ public class comboMenurev1 {
                     if (realSandwich.equalsIgnoreCase("c")){
                         cost+=5.25;
                         sandwichDone="yes";
-                        System.out.print(cost);
+                        finalSandwich = "chicken sandwich";
                         break;
                         
                     }
                     if (realSandwich.equalsIgnoreCase("b")){
                         cost+=6.25;
                         sandwichDone="yes";
-                        System.out.print(cost);
+                        finalSandwich = "beef sandwich";
                         break;
                     }
                     if (realSandwich.equalsIgnoreCase("t")){
                         cost+=5.75;
                         sandwichDone="yes";
-                        System.out.print(cost);
+                        finalSandwich = "tofu sandwich";
                         break;
                     }
                 }
@@ -67,20 +74,20 @@ public class comboMenurev1 {
                         if (realFries.equalsIgnoreCase("s")){
                             cost+=1.00;
                             friesDone="yes";
-                            System.out.print(cost);
+                            finalFry = "small fry";
                             break;
                                 
                         }
                         if (realFries.equalsIgnoreCase("m")){
                             cost+=1.75;
                             friesDone="yes";
-                            System.out.print(cost);
+                            finalFry = "medium fry";
                             break;
                         }
                         if (realFries.equalsIgnoreCase("l")){
                             cost+=2.25;
                             friesDone="yes";
-                            System.out.print(cost);
+                            finalFry = "large fry";
                             break;
                         }
                         }}}
@@ -99,14 +106,14 @@ public class comboMenurev1 {
                     if (realDrink.equalsIgnoreCase("s")){
                         cost+=1.00;
                         drinkDone="yes";
-                        System.out.print(cost);
+                        finalDrink = "small drink";
                         break;
                                                     
                     }
                     if (realDrink.equalsIgnoreCase("m")){
                         cost+=1.50;
                         drinkDone="yes";
-                        System.out.print(cost);
+                        finalDrink = "medium drink";
                         break;
                     }
                     if (realDrink.equalsIgnoreCase("l")){
@@ -117,65 +124,113 @@ public class comboMenurev1 {
                                 cost+=2.38;
                                 drinkDone="yes";
                                 childSize="yes";
-                                System.out.print(cost);
+                                finalChildSize = "child size drink";
                                 break; 
                             }
                             else if(realChildSize.equalsIgnoreCase("n")){
                             cost+=2.00;
                             drinkDone="yes";
-                            childSize="yes";
-                            System.out.print(cost);
+                            finalDrink = "large drink";
                             break;
                             }
                         }
                     }
                                             }}}
-        System.out.println("do you want ketchup? (y/n)");
-        String wantKetchup=ui.next();
-        if (wantKetchup.equalsIgnoreCase("n")){ 
-            
-    }
-        else if (wantKetchup.equalsIgnoreCase("y")){
-            while (!ketchupDone.equals ("yes")){
-                System.out.println("how many? ($0.25 each)");
-                Double ketchup=(double)ui.nextDouble();
-                ketchup=(double)ketchup*0.25;
-                cost=cost+ketchup;
-                ketchupDone="yes";
+        String wantKetchup2="";                          
+        while (!ketchupDone2.equals ("yes")){
+            System.out.println("do you want ketchup? (y/n)");
+            String wantKetchup=ui.next();
+            if (wantKetchup.equalsIgnoreCase("n")){ 
+                wantKetchup2="n";
+                ketchupDone2="yes";
+            }
+            else if (wantKetchup.equalsIgnoreCase("y")){
+                while (!ketchupDone.equals ("yes")){
+                    System.out.println("how many? ($0.25 each)");
+                    Double ketchup=(double)ui.nextDouble();
+                    ketchup=(double)ketchup*0.25;
+                    cost=cost+ketchup;
+                    ketchupDone="yes";
+                    ketchupDone2="yes";
+                    wantKetchup2="y";
 
 
-        }}
+        }}}
         System.out.println("are you done? (y/n)");
         String actullDone=ui.next();
-        if (actullDone.equalsIgnoreCase("n")){ 
+        if (actullDone.equalsIgnoreCase("n")){
+            String summary = "Order " + orderNumber + " Summary:\n";
+            if (!finalSandwich.isEmpty()) {
+                summary += "Sandwich: " + finalSandwich + "\n";
+            }
+            if (!finalFry.isEmpty()) {
+                summary += "Fries: " + finalFry + "\n";
+            }
+            if (!finalDrink.isEmpty()) {
+                summary += "Drink: " + finalDrink + "\n";
+            }
+            if (!finalChildSize.isEmpty()) {
+                summary += "Child Size Drink: " + finalChildSize + "\n";
+            }
+            if (wantKetchup2.equalsIgnoreCase("y")) {
+                summary += "Ketchup: Yes\n";
+            }
+
+            if (sandwichDiscount.equals("yes") && friesDiscount.equals("yes") && drinkDiscount.equals("yes")) {
+                cost -= 1;
+            }
+            cost = Math.round(cost * 100) / 100.0;
+            summary += "Pretax cost: $" + cost + "\n";
+            double tax = cost * 0.07;
+            cost += tax;
+            cost = Math.round(cost * 100) / 100.0;
+            summary += "After tax: $" + cost + "\n";
+
+            allOrders += summary; 
+            orderNumber++;
+            //Resets it all for next order
             reallyDone="no";
             sandwichDone="no";
             friesDone="no";
             drinkDone="no";
-        }
+            ketchupDone="no";
+            ketchupDone2="no";
+            childSize="no";
+            finalChildSize = "";
+            }
         else if (actullDone.equalsIgnoreCase("y")){
-            if (sandwichDiscount.equals("yes") && friesDiscount.equals("yes") && drinkDiscount.equals("yes")  ){
-                cost=cost-1;
-                System.out.println("pretax cost: "+cost);
-                Double tax=cost*0.07;
-                tax=tax+cost;
-                System.out.println(tax);
-                tax=(double)Math.round(tax*100)/100;
-                System.out.println(tax);
-                System.out.println("after tax: "+tax);
-                reallyDone="yes";
+            String summary = "Order " + orderNumber + " Summary:\n";
+            if (!finalSandwich.isEmpty()) {
+                summary += "Sandwich: " + finalSandwich + "\n";
             }
-            else{
-                System.out.println("pretax cost: "+cost);
-                Double tax=cost*0.07;
-                tax=tax+cost;
-                System.out.println(tax);
-                tax=(double)Math.round(tax*100)/100;
-                System.out.println(tax);
-                System.out.println("after tax: "+tax);
-                reallyDone="yes";
+            if (!finalFry.isEmpty()) {
+                summary += "Fries: " + finalFry + "\n";
             }
+            if (!finalDrink.isEmpty()) {
+                summary += "Drink: " + finalDrink+ "\n";
+            }
+            if (!finalChildSize.isEmpty()) {
+                summary += "Child Size Drink: " + finalChildSize + "\n";
+            }
+            if (wantKetchup2.equalsIgnoreCase("y")) {
+                summary += "Ketchup: Yes\n";
+            }
+
+            if (sandwichDiscount.equals("yes") && friesDiscount.equals("yes") && drinkDiscount.equals("yes")) {
+                cost -= 1;
+            }
+
+            summary += "Pretax cost: $" + cost + "\n";
+            double tax = cost * 0.07;
+            cost += tax;
+            cost = Math.round(cost * 100) / 100.0;
+            summary += "After tax: $" + cost + "\n";
+            allOrders += summary;
+            reallyDone="yes";
         }
+
         }
+        System.out.println("All Orders:");
+        System.out.println(allOrders);
     }
 }
