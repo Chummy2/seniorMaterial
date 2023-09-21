@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         EditText lastETXT = findViewById(R.id.lastEditText);
         EditText cityETXT = findViewById(R.id.cityEditText);
         EditText schoolETXT = findViewById(R.id.schoolEditText);
-        EditText petETXT = findViewById(R.id.petEditText);
+        EditText petTEXT = findViewById(R.id.petEditText);
         EditText siblingETXT = findViewById(R.id.siblingEditText);
         Button generateBTN = findViewById(R.id.button2);
         TextView outputTXT = findViewById(R.id.textView13);
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 String last = String.valueOf(lastETXT.getText());
                 String city = String.valueOf(cityETXT.getText());
                 String school = String.valueOf(schoolETXT.getText());
-                String pet = String.valueOf(petETXT.getText());
+                String pet = String.valueOf(petTEXT.getText());
                 String sibling = String.valueOf(siblingETXT.getText());
 
                 int firstPortion = randy.nextInt(first.length());
