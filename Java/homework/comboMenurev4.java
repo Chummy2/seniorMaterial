@@ -140,27 +140,28 @@ public class comboMenurev1 {
                                             }}}
         String wantKetchup2="";                          
         while (!ketchupDone2.equals ("yes")){
-            System.out.println("do you want ketchup? (y/n)");
-            String wantKetchup=ui.next();
-            if (wantKetchup.equalsIgnoreCase("n")){ 
-                wantKetchup2="n";
-                ketchupDone2="yes";
-            }
-            else if (wantKetchup.equalsIgnoreCase("y")){
-                while (!ketchupDone.equals ("yes")){
-                    System.out.println("how many? ($0.25 each)");
-                    Double ketchup=(double)ui.nextDouble();
-                    if (ketchup>0){
-                        ketchup=(double)ketchup*0.25;
-                        cost=cost+ketchup;
-                        ketchupDone="yes";
-                        ketchupDone2="yes";
-                        wantKetchup2="y";
-                    }
-                    else if (ketchup<0){
-                        System.out.println("Input a number higher then 1");
-                    }
-        }}}
+            System.out.println("Do you want ketchup? (y/n)");
+            String wantKetchup = ui.next();
+            if (wantKetchup.equalsIgnoreCase("n")) {
+                wantKetchup2 = "n";
+                ketchupDone2 = "yes";
+            } else if (wantKetchup.equalsIgnoreCase("y")) {
+                while (!ketchupDone.equals("yes")) {
+                    System.out.println("How many? ($0.25 each)");
+                    try {
+                        int numKetchup = Integer.parseInt(ui.next());
+                        if (numKetchup > 0) {
+                            double ketchupCost = numKetchup * 0.25;
+                            cost += ketchupCost;
+                            ketchupDone = "yes";
+                            ketchupDone2 = "yes";
+                            wantKetchup2 = "y";
+                        } else {
+                            System.out.println("Input a number higher than 0.");
+                        }
+                    } catch (NumberFormatException e) {
+                        System.out.println("Invalid input. Please enter a valid number.");
+        }}}}
         System.out.println("are you done? (y/n)");
         String actullDone=ui.next();
         if (actullDone.equalsIgnoreCase("n")){
@@ -183,12 +184,13 @@ public class comboMenurev1 {
 
             if (sandwichDiscount.equals("yes") && friesDiscount.equals("yes") && drinkDiscount.equals("yes")) {
                 cost -= 1;
+                System.out.println("Discount activated");
             }
-            cost = Math.round(cost * 100) / 100.0;
-            summary += "Pretax cost: $" + cost + "\n";
+            String finalCost = String.format("%.2f", cost);
+            summary += "Pretax cost: $" + finalCost + "\n";
             double tax = cost * 0.07;
             cost += tax;
-            cost = Math.round(cost * 100) / 100.0;
+            finalCost = String.format("%.2f", cost);
             summary += "After tax: $" + cost + "\n";
 
             allOrders += summary; 
@@ -223,6 +225,7 @@ public class comboMenurev1 {
 
             if (sandwichDiscount.equals("yes") && friesDiscount.equals("yes") && drinkDiscount.equals("yes")) {
                 cost -= 1;
+                System.out.println("dollar discount activated");
             }
 
             summary += "Pretax cost: $" + cost + "\n";
