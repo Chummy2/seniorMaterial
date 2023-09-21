@@ -1,5 +1,13 @@
 import java.util.Scanner;
 public class comboMenurev1 {
+    public static boolean isNotNumeric(String str) {
+        try {
+            Double.parseDouble(str);
+            return false; // It can be parsed as a double, so it's a number
+        } catch (NumberFormatException e) {
+            return true; // Parsing failed, it's not a number
+        }
+    }
     public static void main(String[] args) {
     String sandwichDone="no";
     String friesDone="no";
@@ -10,6 +18,7 @@ public class comboMenurev1 {
     String childSize="";
     String ketchupDone="no";
     String ketchupDone2="no";
+    String finalKeptchup="no";
     String sandwichDiscount="no";
     String friesDiscount="no";
     String drinkDiscount="no";
@@ -148,13 +157,16 @@ public class comboMenurev1 {
                 while (!ketchupDone.equals ("yes")){
                     System.out.println("how many? ($0.25 each)");
                     Double ketchup=(double)ui.nextDouble();
-                    ketchup=(double)ketchup*0.25;
-                    cost=cost+ketchup;
-                    ketchupDone="yes";
-                    ketchupDone2="yes";
-                    wantKetchup2="y";
-
-
+                    if (ketchup<0){
+                        ketchup=(double)ketchup*0.25;
+                        cost=cost+ketchup;
+                        ketchupDone="yes";
+                        ketchupDone2="yes";
+                        wantKetchup2="y";
+                    }
+                    else if (ketchup>0){
+                        System.out.println("Input a number higher then 1");
+                    }
         }}}
         System.out.println("are you done? (y/n)");
         String actullDone=ui.next();
