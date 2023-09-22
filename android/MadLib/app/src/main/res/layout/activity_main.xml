@@ -7,17 +7,12 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:text="Mad Libs" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,28 +20,28 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/firstStory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="choice:1" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/secondStory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="choice:2" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/thirdStory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="choice:3" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/randomStory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -116,6 +111,26 @@
             android:ems="10"
             android:hint="adjective"
             android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/enterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enter" />
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reset" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/outputText"
