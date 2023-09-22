@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         firstStory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //did alt enter and got this
                 char[] story= ("Once upon a time, in a (1 - Place) far, far away, there lived a(n) (2 - Adjective) (3 - Animal). This (3 - Animal) had a peculiar habit of (4 - Verb ending in -ing) all day long.\n " +
                                 "One sunny (5 - Day of the week), (6 - Name) decided to pay a visit to this unusual creature. (6 - Name) brought a basket filled with (7 - Plural Noun) and a(n) (8 - Adjective) hat.\n " +
                                 "As soon as (6 - Name) arrived at the (1 - Place), the (3 - Animal) stopped (4 - Verb ending in -ing) and looked up with (8 - Adjective) eyes. It seemed that the (3 - Animal) was in dire need of some (7 - Plural Noun).\n " +
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
                 String sixthAnswer = sixthChoice.getText().toString();
                 String seventhAnswer = seventhChoice.getText().toString();
                 String eighthAnswer = eighthChoice.getText().toString();
-
+                //https://www.w3schools.com/java/ref_string_replace.asp
                 story = story.replace("(1 - Place)", firstAnswer);
                 story = story.replace("(2 - Adjective)", secondAnswer);
                 story = story.replace("(3 - Animal)", thirdAnswer);
@@ -123,9 +124,21 @@ public class MainActivity extends AppCompatActivity {
                 story = story.replace("(7 - Plural Noun)", seventhAnswer);
                 story = story.replace("(8 - Adjective)", eighthAnswer);
 
-                // For the other stories, you would also include the replacements for those specific placeholders.
-
                 outputText.setText(story);
+            }
+        });
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                firstChoice.setText("");
+                secondChoice.setText("");
+                thirdChoice.setText("");
+                fourthChoice.setText("");
+                fifthChoice.setText("");
+                sixthChoice.setText("");
+                seventhChoice.setText("");
+                eighthChoice.setText("");
+                outputText.setText("");
             }
         });
         }
