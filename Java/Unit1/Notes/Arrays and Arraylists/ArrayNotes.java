@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ArrayNotes {
     public static void main(String[] args) {
         /**
@@ -11,23 +13,58 @@ public class ArrayNotes {
         //double cannot go into a int  but a int can go into a double    }   
 
         String[] words={"Hello"," ","World"};
-        System.out.println(intNumbers);
-        for (int i=0;i<intNumbers.length;i++){
-            System.out.println(intNumbers[i]);
-        }
-        for (int i=0;i<words.length;i++){
-            System.out.print(words[i]);
-        }
+        //System.out.println(intNumbers);
+        //for (int i=0;i<intNumbers.length;i++){
+        //    System.out.println(intNumbers[i]);
+        //}
+        //for (int i=0;i<words.length;i++){
+        //    System.out.print(words[i]);
+        //}
         printHorizontalArray(intNumbers);
         printVerticalArray(intNumbers);
         printHorizontalArray(intNumbers,",");
+        int[] userNumbers=new int[10];
+        String[] a = new String[10];
+        Scanner ui = new Scanner(System.in);
+        for (int i=0;i<10;i++){
+            System.out.println("enter 10 numbers");
+            userNumbers[i]=ui.nextInt();
+        }
+        System.out.println(minIntArray(userNumbers));
+        System.out.println(maxIntArray(userNumbers));
+        System.out.println(aveIntArray(userNumbers));
+        System.out.println(sumIntArray(userNumbers));
 
 }
-    public static void printVerticalArray(int[] arr){
-            for (int i=0;i<arr.length;i++){
-            System.out.println(arr[i]);
+    public static int minIntArray(int[] arr){
+        int min = Integer.MAX_VALUE;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<min){
+                min=arr[i];
+            }
         }
+        return min;
+    }
+    public static int maxIntArray(int[] arr){
+        int max = Integer.MIN_VALUE;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
         }
+        return max;
+    }
+    public static int sumIntArray(int[] arr){
+        int total = 0;
+        for(int i=0;i<arr.length;i++){
+            total+=arr[i];
+        }
+        return total;
+    }
+    public static double aveIntArray(int[] arr){
+        double ave = sumIntArray(arr)/arr.length;
+        return ave;
+    }
     public static void printHorizontalArray(int[] arr){
             for (int i=0;i<arr.length;i++){
             System.out.println(arr[i]);
