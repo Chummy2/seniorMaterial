@@ -1,23 +1,23 @@
-public class Book {
+public class Movies {
     //field var
         String title;
         String author;
         double rating;
-        public Book(){
+        public Movies(){
     
         }
         //constructor signature
-        public Book(String title){
+        public Movies(String title){
             //this.globalvar = localvar
             this.title =title;
         }
     
-        public Book(String title, String authors){
+        public Movies(String title, String authors){
             //this.globalvar = localvar
             this.title=title;
             this.author=authors;
         }
-        public Book(String title, String authors, double rate){
+        public Movies(String title, String authors, double rate){
             //this.globalvar = localvar
             this.title=title;
             this.author=authors;
@@ -44,7 +44,7 @@ public class Book {
         public String toString() {
             String out="";
             out+="Title: "+this.title;
-            out+="\nAuthor: "+this.author;
+            out+="\nDirector: "+this.author;
             out+="\nRating: "+this.rating;
             out+="\n";
             return out;
