@@ -28,7 +28,8 @@ public class Student {
     public String toString() {
         String out="";
         out+=("name:\t"+this.n);
-        out+=("name:\t"+this.g);
+        out+=("\nGrade:\t"+this.g+"\n");
+        return out;
     }
 
 }

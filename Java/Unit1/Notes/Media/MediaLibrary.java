@@ -58,7 +58,7 @@ public class MediaLibrary {
     private static void printAveRating(ArrayList<Song>arr){
         double average = 0.0;
         double sum =0.0;
-        for (int i=0;i<arr.size();i++){
+        for (int i=0;i<arr.size ();i++){u7jnm
             sum+=arr.get(i).getRating();
         }
         average=sum/arr.size();
