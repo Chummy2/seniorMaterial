@@ -10,6 +10,7 @@ public class PasswordManager {
         String loginDone = "no";
         Integer attempts=0;
         while (!mainDone.equals("yes")){
+            passwordDone="no";//lets you create another account. without it you cant create another password
             System.out.println("(C)reate account or (S)ign in?");
             userInput = ui.nextLine();
             if (userInput.equalsIgnoreCase("c")){
@@ -47,6 +48,7 @@ public class PasswordManager {
                         }
                         else if (userName.equals("bob") && password.equals("hi")){
                             System.out.println("welcome");
+                            loginDone="yes";
 
                         }
                     }

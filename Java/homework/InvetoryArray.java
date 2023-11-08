@@ -12,45 +12,44 @@ public class Inventory {
             System.out.println("What would you like to do? (a)dd, (i)nsert, (r)emove, Re(p)lace, (c)lear, (v)iew, or (q)uit");
             userInput = ui.nextLine();
             if (userInput.equals("a")) {
-                System.out.println("Enter pet name to add:");
-                petList= ui.nextLine();
+                System.out.println("Enter a pet name to add:");
+                petList[currentSize] = ui.nextLine();
                 currentSize++;
             } else if (userInput.equals("i")) {
                 System.out.println("Enter a number to insert into:");
-                int index = ui.nextInt();
+                int Number = ui.nextInt();
                 System.out.println("Enter a pet name to insert:");
                 String name = ui.next();
-                if (index >= 0 && index < currentSize) {
-                    //https://stackoverflow.com/questions/11638123/how-to-add-an-element-to-array-and-shift-indexes - Where I found arraycopy third comment
+                if (Number >= 0 && Number < currentSize) {
+                    //https://stackoverflow.com/questions/11638123/how-to-add-an-element-to-array-and-shift-Numberes - Where I found arraycopy third comment
                     //https://www.geeksforgeeks.org/system-arraycopy-in-java/
                     //https://chat.openai.com/share/716d6154-132a-4f37-9a45-16080982d470
                     //geeks was not explaining enough lol
-                    System.arraycopy(petList, index, petList, index + 1, currentSize - index);
-                    petList[index] = name;
+                    petList[Number] = name;
                     currentSize++;
                 } else {
-                    System.out.println("Invalid number!");
+                    System.out.println("Please enter a correct number");
                 }
             } else if (userInput.equals("r")) {
-                System.out.println("Enter number of pet to remove:");
-                int index = ui.nextInt();
-                if (index >= 0 && index < currentSize) {
-                    System.arraycopy(petList, index + 1, petList, index, currentSize - index - 1);
+                System.out.println("Enter number of the pet to remove:");
+                int Number = ui.nextInt();
+                if (Number >= 0 && Number < currentSize) {
+                    System.arraycopy(petList, Number + 1, petList, Number, currentSize - Number - 1);
                     currentSize--;
                 } else {
-                    System.out.println("Invalid number!");
+                    System.out.println("Please enter a correct number");
                 }
             } else if (userInput.equals("p")) {
-                System.out.println("Enter number to replace:");
-                int index = ui.nextInt();
-                System.out.println("Enter a pet name to replace:");
+                System.out.println("Enter number of pet to replace:");
+                int Number = ui.nextInt();
+                System.out.println("Enter name of pet to replace:");
                 String name = ui.next();
-                if (index >= 0 && index < currentSize) {
-                    petList[index] = name;
+                if (Number >= 0 && Number < currentSize) {
+                    petList[Number] = name;
                 } else {
-                    System.out.println("Invalid number!");
+                    System.out.println("Please enter a correct number");
                 }
-                //fixed error idk really how
+                //fixed error idk really know how
                 ui.nextLine();
             } else if (userInput.equals("c")) {
                 Arrays.fill(petList, null);

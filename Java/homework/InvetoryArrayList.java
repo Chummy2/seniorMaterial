@@ -15,33 +15,39 @@ public class Inventory {
             userInput = ui.nextLine();
 
             if(userInput.equals("a")){
-                System.out.println("Enter pet name to add:");
+                System.out.println("Enter a pet name to add:");
                 petList.add(ui.nextLine());
             }
             else if(userInput.equals("i")){
                 System.out.println("Enter a number to insert into:");
-                int index = ui.nextInt();
-                System.out.println("Enter a pet name to insert:");
-                String name = ui.next();
-                petList.add(index, name);
+                int Number = ui.nextInt();
+                if (Number >= 0 && Number < petList.size()) {
+                    System.out.println("Enter a pet name to insert:");
+                    String name = ui.next();
+                    petList.add(Number, name);
+                }
+                 else {
+                    System.out.println("Please enter a correct number");
+                }
             }
             else if(userInput.equals("r")){
-                System.out.println("Enter index of pet to remove:");
-                int index = ui.nextInt();
-                if(index < petList.size()){
-                    petList.remove(index);
+                System.out.println("Enter number of the pet to remove:");
+                int Number = ui.nextInt();
+                if(Number >= 0 && Number < petList.size()){
+                    petList.remove(Number);
                 } else{
-                    System.out.println("Index out of bound!");
+                    System.out.println("Please enter a correct number");
                 }
             }
             else if(userInput.equals("p")){
-                System.out.println("Enter index and new pet name to replace:");
-                int index = ui.nextInt();
+                System.out.println("Enter number of pet to replace:");
+                int Number = ui.nextInt();
+                System.out.println("Enter name of pet to replace:");
                 String name = ui.next();
-                if(index < petList.size()){
-                    petList.set(index, name);
+                if(Number < petList.size()){
+                    petList.set(Number, name);
                 } else{
-                    System.out.println("Index out of bound!");
+                    System.out.println("Please enter a correct number");
                 }
             }
             else if(userInput.equals("c")){
