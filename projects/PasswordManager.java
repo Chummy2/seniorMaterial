@@ -52,7 +52,7 @@ public class PasswordManager {
                         }
                         else if (userName.equals("bob") && password.equals("hi")){
                             System.out.println("welcome");
-                            loginDone="yes";
+                            
 
                         }
                     }
