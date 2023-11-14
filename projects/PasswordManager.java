@@ -7,6 +7,7 @@ public class PasswordManager {
         String password = "";
         String mainDone = "no";
         String passwordDone = "no";
+        string generatePasswordDone="no";
         String loginDone = "no";
         Integer attempts=0;
         while (!mainDone.equals("yes")){
@@ -20,7 +21,10 @@ public class PasswordManager {
                     System.out.println("Do you want a (G)enerated password or do you want to (C)reate you own?");
                     userInput = ui.nextLine();
                     if (userInput.equalsIgnoreCase("g")){
-                        passwordDone="yes";
+                            password = PasswordGenerator.password();
+                            System.out.println(password);
+                            System.out.println("Do you like this password?");;
+                            passwordDone="yes";
                     }
                     else if (userInput.equalsIgnoreCase("c")){
                         System.out.println("What password do you want?");
