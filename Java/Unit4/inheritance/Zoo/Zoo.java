@@ -35,6 +35,21 @@ public class Zoo
                 case "visit cages" : 
                 msg = visitCages(animals);
                 break;
+                case "look up" : 
+                msg = lookUp(animals);
+                break;
+                case "look down" : 
+                msg = lookDown(animals);
+                break;
+                case "look around" : 
+                msg = lookAround(animals);
+                break;
+                case "see bird" : 
+                msg = seeTheBirds(animals);
+                break;
+                case "listen" : 
+                msg = listen(animals);
+                break;
                 default : msg = "You flail helplessly with indecision.";
             }
             System.out.println("\n" + msg);
@@ -45,25 +60,57 @@ public class Zoo
         System.out.println(Math.random() < .5 ? "\nHave a nice day!  Hope you come back!" : "\nAn escaped lion eats you on your way out.  Sorry!");
     }
     
-    public static String seeTheBears(List<Animal> animals){
-        return "";
+    public static String seeTheBirds(List<Animal> animals){
+        String msg="";
+        for(Animal a: animals){
+            if (a instanceof Bird){
+                Bird f = (Bird) a;
+                msg+= a.getName()+ ":\n\t"+f.poop()+"\n";
+            }
+        }
+        return msg;
     }
     
     
     public static String listen(List<Animal> animals){
-        return "";
+        String msg = "";
+            for(Animal a: animals){
+                msg+=a.getName()+":\n\t"+a.makeNoise()+"\n";
+            }
+        return msg;
     }
        
     public static String lookDown(List<Animal> animals){
-        return "";
+        String msg="";
+        for(Animal a: animals){
+            if (a instanceof Swimming){
+                Swimming f = (Swimming) a;
+                msg+= a.getName()+ ":\n\t"+f.swim()+"\n";
+            }
+        }
+        return msg;
     }
     
     public static String lookUp(List<Animal> animals){
-        return "";
+        String msg="";
+        for(Animal a: animals){
+            if (a instanceof Flying){
+                Flying f = (Flying) a;
+                msg+= a.getName()+ ":\n\t"+f.fly()+"\n";
+            }
+        }
+        return msg;
     }
     
     public static String lookAround(List<Animal> animals){
-        return "";
+        String msg="";
+        for(Animal a: animals){
+            if (a instanceof Walking){
+                Walking f = (Walking) a;
+                msg+= a.getName()+ ":\n\t"+f.walk()+"\n";
+            }
+        }
+        return msg;
     }
     
     public static String visitCages(List<Animal> animals)
@@ -107,9 +154,21 @@ public class Zoo
         TrashPanda tp =new TrashPanda();
         Otters o = new Otters();
         Chipmunk cm = new Chipmunk();
-
+        BlueJay bj = new BlueJay();
+        GoldFish gf = new GoldFish();
+        Whale w = new Whale();
+        Turtle t = new Turtle();
+        Eagle e = new Eagle();
+        Godzilla gz = new Godzilla("Zilla God","Big and Scary");
         animals.add(tp);
         animals.add(o);
         animals.add(cm);
+        animals.add(bj);
+        animals.add(gf);
+        animals.add(w);
+        animals.add(t);
+        animals.add(e);
+        animals.add(gz);
+        animals.add(new bat());
     }
 }

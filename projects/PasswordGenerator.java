@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
-
+//https://www.digitalocean.com/community/tutorials/shuffle-array-java
+//https://www.javatpoint.com/java-ascii-table
 public class PasswordGenerator extends PasswordManager {
     public static String password() {
         List<Character> finalPassword = new ArrayList<>();

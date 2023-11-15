@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     private String name,desc;
 
     public Animal(String name, String description){
@@ -12,4 +12,5 @@ public class Animal {
     public String getDesc(){
         return desc;
     }
+    public abstract String makeNoise();
 }
