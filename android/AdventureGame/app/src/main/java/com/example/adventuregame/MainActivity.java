@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Button infoButton = findViewById(R.id.infoButton);
         infoButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,8 +26,10 @@ public class MainActivity extends AppCompatActivity {
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final int day = 1;
                 // Create an Intent to start the InfoActivity
                 Intent start = new Intent(MainActivity.this, start.class);
+                start.putExtra("day ", day);
                 startActivity(start);
             }
         });
