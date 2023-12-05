@@ -13,7 +13,6 @@ public class DrinksViewModel extends ViewModel {
         mText.setValue("This is drinks fragment");
     }
 
-    // Remove the static keyword
     public LiveData<String> getText() {
         return mText;
     }

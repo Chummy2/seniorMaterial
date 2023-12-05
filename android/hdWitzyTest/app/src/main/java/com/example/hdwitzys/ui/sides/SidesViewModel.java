@@ -13,7 +13,6 @@ public class SidesViewModel extends ViewModel {
         mText.setValue("This is sides fragment");
     }
 
-    // Remove the static keyword
     public LiveData<String> getText() {
         return mText;
     }

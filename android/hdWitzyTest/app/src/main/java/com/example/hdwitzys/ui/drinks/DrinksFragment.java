@@ -18,16 +18,14 @@ public class DrinksFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        // Create an instance of DrinksViewModel
         DrinksViewModel drinksViewModel =
                 new ViewModelProvider(this).get(DrinksViewModel.class);
 
         binding = FragmentDrinksBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDrink;
-        // Use the instance of DrinksViewModel to call getText()
-        drinksViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textDrinks;
+//        DrinksViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

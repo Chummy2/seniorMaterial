@@ -10,24 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.hdwitzys.databinding.FragmentEntreesBinding;
+import com.example.hdwitzys.databinding.FragmentIcecreamBinding;
 
 public class IceCreamFragment extends Fragment {
 
-    private FragmentEntreesBinding binding;
+    private FragmentIcecreamBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        // Correctly instantiate IceCreamViewModel
-        IceCreamViewModel iceCreamViewModel =
+        IceCreamViewModel entreesViewModel =
                 new ViewModelProvider(this).get(IceCreamViewModel.class);
 
-        binding = FragmentEntreesBinding.inflate(inflater, container, false);
+        binding = FragmentIcecreamBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textEntree;
-        // Use the instance of IceCreamViewModel to call getText()
-        iceCreamViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+//        final TextView textView = binding.textIceCream;
+//        IceCreamViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

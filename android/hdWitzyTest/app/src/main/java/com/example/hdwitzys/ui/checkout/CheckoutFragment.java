@@ -4,36 +4,60 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.hdwitzys.databinding.FragmentEntreesBinding;
+import com.example.hdwitzys.R;
+import com.example.hdwitzys.databinding.FragmentCheckoutBinding;
+
+import java.util.ArrayList;
 
 public class CheckoutFragment extends Fragment {
 
-    private FragmentEntreesBinding binding;
+    private FragmentCheckoutBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        // Renamed the ViewModel instance for clarity
-        CheckoutViewModel checkoutViewModel =
-                new ViewModelProvider(this).get(CheckoutViewModel.class);
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        binding = FragmentCheckoutBinding.inflate(inflater, container, false);
+        View view = binding.getRoot();
 
-        binding = FragmentEntreesBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+        // Assuming you have a list of items in the order, customize based on your data structure
+        ArrayList<String> orderItemList = getOrderItemList();
 
-        final TextView textView = binding.textEntree;
-        // Use the instance to call getText()
-        checkoutViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
-        return root;
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, orderItemList);
+
+        ListView listView = binding.checkoutListView;
+        listView.setAdapter(adapter);
+
+        // Handle delete button click
+        Button deleteButton = binding.deleteButton;
+        deleteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Implement logic to delete the selected item from the order
+                // Update the adapter and refresh the ListView
+                // You might want to implement a method like deleteItem(int position)
+            }
+        });
+
+        // Add any additional logic or UI customization specific to the CheckoutFragment
+
+        return view;
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    // Replace this with your actual method to get order items data
+    private ArrayList<String> getOrderItemList() {
+        ArrayList<String> orderItemList = new ArrayList<>();
+        // Populate the list with items in the order
+        orderItemList.add("Cheeseburger");
+        // Add more items as needed
+        return orderItemList;
     }
 }

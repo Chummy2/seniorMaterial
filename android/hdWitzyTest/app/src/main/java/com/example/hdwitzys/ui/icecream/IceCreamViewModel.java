@@ -13,7 +13,6 @@ public class IceCreamViewModel extends ViewModel {
         mText.setValue("This is ice cream fragment");
     }
 
-    // Remove the static keyword to make this an instance method
     public LiveData<String> getText() {
         return mText;
     }

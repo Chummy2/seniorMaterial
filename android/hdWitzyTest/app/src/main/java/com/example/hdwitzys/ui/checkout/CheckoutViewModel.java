@@ -13,7 +13,6 @@ public class CheckoutViewModel extends ViewModel {
         mText.setValue("This is checkout fragment");
     }
 
-    // Removed 'static' keyword to make it an instance method
     public LiveData<String> getText() {
         return mText;
     }
