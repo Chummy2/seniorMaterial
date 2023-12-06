@@ -4,15 +4,81 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".start"
-    android:background="@drawable/start">
-
+    android:background="@drawable/start"
+    tools:context=".start">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="138dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Day 1"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/healthAndFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Health 5/10 and food 5/10"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/begButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:text="Beg"
+        app:layout_constraintBaseline_toBaselineOf="@+id/workButton"
+        app:layout_constraintEnd_toStartOf="@+id/workButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/workButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="25dp"
+        android:text="Try to find work"
+        app:layout_constraintBottom_toTopOf="@+id/jobButton"
+        app:layout_constraintEnd_toStartOf="@+id/storeButton"
+        app:layout_constraintStart_toEndOf="@+id/begButton" />
+
+    <Button
+        android:id="@+id/jobButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="108dp"
+        android:text="Apply for Job"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/workButton" />
+
+    <Button
+        android:id="@+id/storeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="Store"
+        app:layout_constraintBaseline_toBaselineOf="@+id/workButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/workButton" />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="money $5"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/day"
+        app:layout_constraintTop_toBottomOf="@+id/day" />
 </androidx.constraintlayout.widget.ConstraintLayout>
