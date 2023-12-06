@@ -2,6 +2,7 @@ package com.example.adventuregame;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,10 +15,17 @@ public class beg1 extends AppCompatActivity {
     private int day;
     private int health;
 
+=======
+import android.os.Bundle;
+
+public class beg1 extends AppCompatActivity {
+
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beg1);
+<<<<<<< HEAD
 
         Intent grabMoney = getIntent();
         if (grabMoney != null && grabMoney.hasExtra("money")) {
@@ -45,3 +53,7 @@ public class beg1 extends AppCompatActivity {
             }
         });
     }}
+=======
+    }
+}
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06

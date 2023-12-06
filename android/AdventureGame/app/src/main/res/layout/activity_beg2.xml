@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@drawable/beg2"
     tools:context=".beg2">
 
@@ -28,5 +29,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+=======
+    tools:context=".beg2"
+    android:background="@drawable/beg2">
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
 
 </androidx.constraintlayout.widget.ConstraintLayout>

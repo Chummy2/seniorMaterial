@@ -11,21 +11,36 @@
         android:id="@+id/clothes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="284dp"
+=======
+        android:layout_marginBottom="272dp"
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
         android:text="Clothes:  50 dollars"
         android:textColor="#036bfc"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent" />
+=======
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
 
     <TextView
         android:id="@+id/food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginStart="13dp"
         android:layout_marginTop="7dp"
         android:text="Food:  5 dollars"
+=======
+        android:layout_marginStart="8dp"
+        android:text="Food:  10 dollars"
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
         android:textColor="#036bfc"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="@+id/health"
@@ -35,27 +50,45 @@
         android:id="@+id/health"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginEnd="16dp"
         android:text="medkit:  10 dollars"
         android:textColor="#036bfc"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="@+id/healthAndFood"
+=======
+        android:text="medkit:  10 dollars"
+        android:textColor="#036bfc"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
         app:layout_constraintTop_toBottomOf="@+id/foodButton" />
 
     <Button
         android:id="@+id/clothesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginStart="13dp"
         android:text="Buy"
         app:layout_constraintStart_toStartOf="@+id/clothes"
+=======
+        android:layout_marginStart="30dp"
+        android:text="Buy"
+        app:layout_constraintStart_toStartOf="@+id/food"
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
         app:layout_constraintTop_toBottomOf="@+id/clothes" />
 
     <Button
         android:id="@+id/foodButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginStart="22dp"
+=======
+        android:layout_marginStart="30dp"
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
         android:text="Buy"
         app:layout_constraintStart_toStartOf="@+id/food"
         app:layout_constraintTop_toBottomOf="@+id/food" />
@@ -64,42 +97,72 @@
         android:id="@+id/healthButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginStart="68dp"
         android:layout_marginTop="8dp"
         android:text="Buy"
         app:layout_constraintStart_toStartOf="@+id/healthAndFood"
+=======
+        android:layout_marginStart="38dp"
+        android:text="Buy"
+        app:layout_constraintStart_toStartOf="@+id/health"
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
         app:layout_constraintTop_toBottomOf="@+id/health" />
 
     <TextView
         android:id="@+id/money"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginStart="5dp"
         android:layout_marginBottom="16dp"
         android:text="money"
         android:textColor="#036bfc"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
+=======
+        android:layout_marginStart="41dp"
+        android:text="money"
+        android:textColor="#036bfc"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/healthAndFood"
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
         app:layout_constraintStart_toStartOf="@+id/healthAndFood" />
 
     <TextView
         android:id="@+id/healthAndFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginEnd="65dp"
         android:text="Health and food"
         android:textColor="#036bfc"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/money"
         app:layout_constraintEnd_toEndOf="parent" />
+=======
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="47dp"
+        android:text="Health and food"
+        android:textColor="#036bfc"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/clothes"
+        app:layout_constraintEnd_toEndOf="@+id/clothes" />
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
 
     <Button
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginStart="13dp"
         android:layout_marginBottom="15dp"
         android:text="Go back"
         app:layout_constraintBottom_toTopOf="@+id/clothes"
         app:layout_constraintStart_toStartOf="@+id/clothes" />
+=======
+        android:text="Go back"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="658dp" />
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
 </androidx.constraintlayout.widget.ConstraintLayout>

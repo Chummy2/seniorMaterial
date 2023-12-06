@@ -15,7 +15,11 @@ public class start extends AppCompatActivity {
 
     private int health = 5;
     private int food = 5;
+<<<<<<< HEAD
     private int money = 5;
+=======
+    private int money = 500;
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
     private int day = 1;
     private int clothes = 0;
 
@@ -36,12 +40,20 @@ public class start extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent job = new Intent(start.this, job.class);
+<<<<<<< HEAD
                 job.putExtra("health", health);
                 job.putExtra("food", food);
                 job.putExtra("money", money);
                 job.putExtra("clothes", clothes);
                 day += 1;
                 job.putExtra("day", day);
+=======
+                job.putExtra("jobHealth", health);
+                job.putExtra("jobFood", food);
+                job.putExtra("money", money);
+                job.putExtra("clothes", clothes); // Include the clothes value in the intent
+                day += 1;
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                 startActivity(job);
             }
         });
@@ -53,8 +65,11 @@ public class start extends AppCompatActivity {
                 Intent store = new Intent(start.this, store.class);
                 store.putExtra("money", money);
                 store.putExtra("food", food);
+<<<<<<< HEAD
                 day += 1;
                 store.putExtra("day", day);
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                 store.putExtra("health", health);
                 startActivity(store);
             }
@@ -71,18 +86,24 @@ public class start extends AppCompatActivity {
                 switch (randomNumber) {
                     case 0:
                         random = new Intent(start.this, work1.class);
+<<<<<<< HEAD
                         random.putExtra("money", money);
                         random.putExtra("food", food);
                         random.putExtra("day", day);
                         random.putExtra("health", health);
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                         startActivity(random);
                         break;
                     case 1:
                         random = new Intent(start.this, work2.class);
+<<<<<<< HEAD
                         random.putExtra("money", money);
                         random.putExtra("food", food);
                         random.putExtra("day", day);
                         random.putExtra("health", health);
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                         startActivity(random);
                         break;
                     case 2:
@@ -90,11 +111,15 @@ public class start extends AppCompatActivity {
                         TextView dayText = findViewById(R.id.day);
                         day+=1;
                         health-=1;
+<<<<<<< HEAD
                         food-=2;
                         if (health<=0 || food<=0 ){
                             Intent gameOverIntent = new Intent(start.this, gameover.class);
                             startActivity(gameOverIntent);
                         }
+=======
+                        food-=1;
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                         TextView healthAndFoodText = findViewById(R.id.healthAndFood);
                         healthAndFoodText.setText("Health " + health + "/10  " + "Food " + food + "/10");
                         dayText.setText("Day " + day);
@@ -114,31 +139,43 @@ public class start extends AppCompatActivity {
                 switch (randomNumber) {
                     case 0:
                         random = new Intent(start.this, beg1.class);
+<<<<<<< HEAD
                         random.putExtra("money", money);
                         random.putExtra("food", food);
                         random.putExtra("day", day);
                         random.putExtra("health", health);
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                         startActivity(random);
                         break;
                     case 1:
                         random = new Intent(start.this, beg2.class);
+<<<<<<< HEAD
                         random.putExtra("money", money);
                         random.putExtra("food", food);
                         random.putExtra("day", day);
                         random.putExtra("health", health);
                         startActivity(random);
 
+=======
+                        startActivity(random);
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                         break;
                     case 2:
                         Toast.makeText(start.this, "Nobody even looked at you", Toast.LENGTH_LONG).show();
                         TextView dayText = findViewById(R.id.day);
                         day+=1;
                         health-=1;
+<<<<<<< HEAD
                         food-=2;
                         if (health<=0 || food<=0 ){
                             Intent gameOverIntent = new Intent(start.this, gameover.class);
                             startActivity(gameOverIntent);
                         }
+=======
+                        food-=1;
+                        TextView healthAndFoodText = findViewById(R.id.healthAndFood);
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                         healthAndFoodText.setText("Health " + health + "/10  " + "Food " + food + "/10");
                         dayText.setText("Day " + day);
                         break;
@@ -157,9 +194,14 @@ public class start extends AppCompatActivity {
             food = getIntent().getIntExtra("food", food);
             health = getIntent().getIntExtra("health", health);
             clothes = getIntent().getIntExtra("clothes", clothes);
+<<<<<<< HEAD
             day = getIntent().getIntExtra("day", day);
             updateUI();
 
+=======
+
+            updateUI();
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
         }
     }
 
@@ -169,7 +211,10 @@ public class start extends AppCompatActivity {
         moneyText.setText("Money $" + money);
         TextView healthAndFoodText = findViewById(R.id.healthAndFood);
         healthAndFoodText.setText("Health " + health + "/10  " + "Food " + food + "/10");
+<<<<<<< HEAD
         TextView dayText = findViewById(R.id.day);
         dayText.setText("Day "+day);
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
     }
 }

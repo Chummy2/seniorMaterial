@@ -13,9 +13,12 @@
         android:theme="@style/Theme.AdventureGame"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".gameover"
             android:exported="false" />
         <activity
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
             android:name=".work2"
             android:exported="false" />
         <activity

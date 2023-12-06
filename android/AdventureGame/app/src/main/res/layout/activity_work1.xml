@@ -7,6 +7,7 @@
     tools:context=".work1"
     android:background="@drawable/job1">
 
+<<<<<<< HEAD
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -31,4 +32,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
 </androidx.constraintlayout.widget.ConstraintLayout>

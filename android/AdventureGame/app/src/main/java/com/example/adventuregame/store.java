@@ -15,7 +15,10 @@ public class store extends AppCompatActivity {
     private int clothes;
     private int food;
     private int health;
+<<<<<<< HEAD
     private int day=1;
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,10 @@ public class store extends AppCompatActivity {
             food = grabMoney.getIntExtra("food", 0);
             health = grabMoney.getIntExtra("health", 0);
             clothes = grabMoney.getIntExtra("clothes", 0);
+<<<<<<< HEAD
             day = grabMoney.getIntExtra("day", 0);
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
             TextView moneyText = findViewById(R.id.money);
             moneyText.setText("Money $" + money);
             TextView healthAndFoodText = findViewById(R.id.healthAndFood);
@@ -54,9 +60,15 @@ public class store extends AppCompatActivity {
         foodButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 if (money > 4 && food < 10) {
                     food += 1;
                     money -= 5;
+=======
+                if (money > 9 && food < 10) {
+                    food += 1;
+                    money -= 10;
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                     TextView healthAndFoodText = findViewById(R.id.healthAndFood);
                     healthAndFoodText.setText("Health " + health + "/10  " + "Food " + food + "/10");
                     TextView moneyText = findViewById(R.id.money);
@@ -98,7 +110,10 @@ public class store extends AppCompatActivity {
                 back.putExtra("food", food);
                 back.putExtra("health", health);
                 back.putExtra("clothes", clothes);
+<<<<<<< HEAD
                 back.putExtra("day", day);
+=======
+>>>>>>> 128a13c6bce01cb86fc68e7007586945cbc4dd06
                 startActivity(back);
             }
         });
