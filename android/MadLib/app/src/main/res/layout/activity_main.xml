@@ -27,46 +27,45 @@
 
             <Button
                 android:id="@+id/firstStory"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="choice:1" />
+                android:text="First Story" />
 
             <Button
                 android:id="@+id/secondStory"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="choice:2" />
+                android:text="Second Story" />
 
             <Button
                 android:id="@+id/thirdStory"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="choice:3" />
+                android:text="Third Story" />
 
             <Button
                 android:id="@+id/randomStory"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="random" />
+                android:text="Random Story" />
         </LinearLayout>
 
+        <!-- EditText fields for user inputs -->
         <EditText
             android:id="@+id/firstChoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="place"
+            android:hint="Place"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/secondChoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:hint="Adjective"
             android:inputType="text" />
 
@@ -74,75 +73,70 @@
             android:id="@+id/thirdChoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="animal"
+            android:hint="Animal"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/fourthChoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="verb ending in -ing"
+            android:hint="Verb ending in -ing"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/fifthChoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="day of the week"
+            android:hint="Day of the week"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/sixthChoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="name"
+            android:hint="Name"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/seventhChoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="plural noun"
+            android:hint="Plural Noun"
             android:inputType="text" />
 
         <EditText
             android:id="@+id/eighthChoice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="adjective"
+            android:hint="Adjective"
             android:inputType="text" />
 
+        <!-- Action Buttons (Enter and Reset) -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/enterButton"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Enter" />
 
             <Button
                 android:id="@+id/resetButton"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Reset" />
         </LinearLayout>
 
+        <!-- Output TextView -->
         <TextView
             android:id="@+id/outputText"
             android:layout_width="match_parent"
-            android:layout_height="249dp"
+            android:layout_height="wrap_content"
             android:text="" />
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
