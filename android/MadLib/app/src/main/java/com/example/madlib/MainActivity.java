@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
         String[] stories = getStories();
         int viewId = view.getId();
 
+        outputText.setVisibility(View.VISIBLE); // Make the TextView visible
+
         if (viewId == id.firstStory) {
             outputText.setText(stories[0]);
         } else if (viewId == id.secondStory) {
@@ -83,6 +85,9 @@ public class MainActivity extends AppCompatActivity {
         }
         outputText.setText(story);
         outputText.setVisibility(View.VISIBLE); // Show the TextView
+        for (Button button : storyButtons) {
+            button.setEnabled(false);
+        }
     }
 
     private void onResetButtonClick(View view) {
@@ -102,16 +107,13 @@ public class MainActivity extends AppCompatActivity {
 
     private String[] getStories() {
         return new String[] {
-                "Once upon a time, in a (1 - Place) far, far away, there lived a(n) (2 - Adjective) (3 - Animal). This (3 - Animal) had a peculiar habit of (4 - Verb ending in -ing) all day long.\n" +
-                        "One sunny (5 - Day of the week), (6 - Name) decided to pay a visit to this unusual creature. (6 - Name) brought a basket filled with (7 - Plural Noun) and a(n) (8 - Adjective) hat.\n" +
-                        "As soon as (6 - Name) arrived at the (1 - Place), the (3 - Animal) stopped (4 - Verb ending in -ing) and looked up with (8 - Adjective) eyes. It seemed that the (3 - Animal) was in dire need of some (7 - Plural Noun).\n" +
-                        "After sharing the (7 - Plural Noun) with the (3 - Animal), (6 - Name) and the (3 - Animal) spent the rest of the (5 - Day of the week) (4 - Verb ending in -ing) together. It turned out to be a(n) (2 - Adjective) day filled with laughter and (8 - Adjective) adventures.\n" +
-                        "And so, (6 - Name) and the (3 - Animal) became the best of friends, and they continued to have (2 - Adjective) days at the (1 - Place) for years to come.\n",
+                "In the bustling city of (1 - Place), a (2 - Adjective) (3 - Animal) was known for its unique talent of (4 - Verb ending in -ing). Every (5 - Day of the week), (6 - Name) would visit this (3 - Animal) with a bag of (7 - Plural Noun) to see its performance. \n" +
+                        "One particular (5 - Day of the week), the (3 - Animal) decided to surprise (6 - Name) by wearing a(n) (8 - Adjective) costume and performing the most spectacular (4 - Verb ending in -ing) show ever seen in (1 - Place). \n" +
+                        "The crowd cheered, and (6 - Name) realized it was not just an ordinary day but a(n) (2 - Adjective) adventure with the (3 - Animal), leaving everyone in (1 - Place) amazed and filled with joy.\n",
 
-                "One fine day, in the heart of (1 - Place), a(n) (2 - Adjective) (3 - Animal) was discovered (4 - Verb ending in -ing) around. It was a beautiful (5 - Day of the week), and (6 - Name) decided to explore this magical land.\n" +
-                        "Armed with a backpack filled with (7 - Plural Noun) and wearing a(n) (8 - Adjective) hat, (6 - Name) set off on a grand adventure. Little did they know that (1 - Place) held many surprises, and their journey would lead to unforgettable encounters and (2 - Adjective) discoveries.\n" +
-                        "As (6 - Name) ventured deeper into (1 - Place), they encountered (3 - Animal) of all shapes and sizes. Each (3 - Animal) had its own unique way of (4 - Verb ending in -ing), making the day even more (8 - Adjective).\n" +
-                        "With their newfound friends, (6 - Name) explored the hidden wonders of (1 - Place) and created memories that would last a lifetime. And so, the adventure in (1 - Place) became a cherished tale, filled with (7 - Plural Noun) and (2 - Adjective) moments.\n",
+                "Deep in the heart of (1 - Place), there was a secret garden where a(n) (2 - Adjective) (3 - Animal) loved (4 - Verb ending in -ing). On this particular (5 - Day of the week), (6 - Name) stumbled upon this hidden paradise. \n" +
+                        "Carrying a basket of (7 - Plural Noun), (6 - Name) was greeted by the (3 - Animal), who wore a(n) (8 - Adjective) crown. \n" +
+                        "Together, they spent the day (4 - Verb ending in -ing) among the magical flora of (1 - Place). It was a(n) (2 - Adjective) day that (6 - Name) would never forget, filled with laughter and the enchanting presence of the (3 - Animal).",
 
                 "On a (2 - Adjective) (5 - Day of the week), (6 - Name) was at the (1 - Place) (4 - Verb ending in -ing) when a (3 - Animal) suddenly appeared. It wasn't just any (3 - Animal), but one that was carrying a bag full of (7 - Plural Noun). Intrigued, (6 - Name) approached the creature. To their surprise, the bag was (8 - Adjective), and that changed their entire day!\n"
         };
