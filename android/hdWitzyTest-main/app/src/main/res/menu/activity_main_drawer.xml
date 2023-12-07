@@ -13,9 +13,9 @@
             android:icon="@drawable/burgerclip"
             android:title="Entrees" />
         <item
-            android:id="@+id/nav_sides"
+            android:id="@+id/nav_sidesAndSalads"
             android:icon="@drawable/fryclip"
-            android:title="Sides" />
+            android:title="Sides and Salads" />
         <item
             android:id="@+id/nav_drinks"
             android:icon="@drawable/drinkclip"
