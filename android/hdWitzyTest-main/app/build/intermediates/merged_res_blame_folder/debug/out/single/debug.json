@@ -1,0 +1,190 @@
+[
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_sides.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\sides.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_entrees.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\entrees.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_side_nav_bar.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_fragment_icecreamcustomize.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\fragment_icecreamcustomize.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\menu_main.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\menu\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_fryclip.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\fryclip.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_drinks.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\drinks.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_icecreamclip.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\icecreamclip.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_fragment_icecream.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\fragment_icecream.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_content_main.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\content_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_fragment_sides.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\fragment_sides.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_list_item_order.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\list_item_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_fragment_checkout.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\fragment_checkout.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_cartclip.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\cartclip.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\menu_activity_main_drawer.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\menu\\activity_main_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_fragment_drinks.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\fragment_drinks.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_icecream.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\icecream.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_checkout.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\checkout.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_drinkclip.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\drinkclip.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_fragment_entreecustomize.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\fragment_entreecustomize.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_fragment_entrees.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\fragment_entrees.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\drawable_burgerclip.png.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\drawable\\burgerclip.png"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_nav_header_main.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\nav_header_main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-46:/layout_fragment_checkout.xml.flat",
+        "source": "com.example.hdwitzys.app-main-48:/layout/fragment_checkout.xml"
+    },
+    {
+        "merged": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-merged_res-46:\\layout_app_bar_main.xml.flat",
+        "source": "C:\\Users\\bubby\\.gradle\\daemon\\8.0\\com.example.hdwitzys.app-main-48:\\layout\\app_bar_main.xml"
+    }
+]
