@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuessANumberFragment">
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textViewHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guess"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:id="@+id/textViewStrikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strikes: 10"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="140dp" />
+
+    <TextView
+        android:id="@+id/textViewPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points: 0"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp" />
+
+</FrameLayout>

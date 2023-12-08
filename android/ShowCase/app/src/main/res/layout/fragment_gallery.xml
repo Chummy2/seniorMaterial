@@ -1,0 +1,162 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <!-- Story Buttons -->
+    <LinearLayout
+        android:id="@+id/storyButtonsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/firstStory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="First Story" />
+
+        <Button
+            android:id="@+id/secondStory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Second Story" />
+
+        <Button
+            android:id="@+id/thirdStory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Third Story" />
+
+        <Button
+            android:id="@+id/randomStory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Random" />
+    </LinearLayout>
+
+    <!-- EditText fields for user inputs -->
+    <EditText
+        android:id="@+id/firstChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Place"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/storyButtonsLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/secondChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Adjective"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/firstChoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/thirdChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Animal"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/secondChoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/fourthChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Verb ending in -ing"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/thirdChoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/fifthChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Day of the week"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/fourthChoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/sixthChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/fifthChoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/seventhChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Plural Noun"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/sixthChoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/eighthChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Adjective"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/seventhChoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <!-- Action Buttons (Enter and Reset) -->
+    <LinearLayout
+        android:id="@+id/actionButtonsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/eighthChoice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Enter" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Reset" />
+</LinearLayout>
+
+    <!-- Output TextView -->
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@id/actionButtonsLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
