@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_checkout.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_checkout.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_home.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/activity_main.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/app_bar_main.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_sides.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_sides.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/content_main.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/content_main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_entreecustomize.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_entreecustomize.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_icecreamcustomize.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_icecreamcustomize.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_icecream.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_icecream.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_payment.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_payment.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_drinks.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_drinks.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/nav_header_main.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/fragment_entrees.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_entrees.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-mergeDebugResources-48:/layout/list_item_order.xml",
+        "source": "com.example.hdwitzys.app-main-51:/layout/list_item_order.xml"
+    }
+]

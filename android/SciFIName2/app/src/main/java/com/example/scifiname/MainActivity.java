@@ -1,6 +1,6 @@
 /*
  * Decompiled with CFR 0.150.
- * 
+ *
  * Could not load the following classes:
  *  android.os.Bundle
  *  androidx.appcompat.app.AppCompatActivity
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         EditText siblingETXT = findViewById(R.id.siblingEditText);
         Button generateBTN = findViewById(R.id.button2);
         TextView outputTXT = findViewById(R.id.textView13);
-
         generateBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

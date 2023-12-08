@@ -1,0 +1,182 @@
+[
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_icecreamcustomize.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_icecreamcustomize.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_baseline_home_24.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/baseline_home_24.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_creditcard.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/creditcard.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_icecreamclip.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/icecreamclip.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_burgerclip.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/burgerclip.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_nav_header_main.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_activity_main.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_drinks.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_drinks.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_app_bar_main.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_sides.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_sides.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/menu_activity_main_drawer.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_logo.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/logo.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_baseline_add_24.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/baseline_add_24.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_fryclip.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/fryclip.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_drinkclip.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/drinkclip.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_list_item_order.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/list_item_order.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_payment.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_payment.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_cartclip.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/cartclip.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_pasture.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/pasture.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_side_nav_bar.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/side_nav_bar.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_entrees.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_entrees.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/drawable_star.png.flat",
+        "source": "com.example.hdwitzys.app-main-51:/drawable/star.png"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_home.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/menu_main.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/menu/main.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_icecream.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_icecream.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_checkout.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_checkout.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/xml_backup_rules.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.hdwitzys.app-main-51:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_fragment_entreecustomize.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/fragment_entreecustomize.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/navigation_mobile_navigation.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/navigation/mobile_navigation.xml"
+    },
+    {
+        "merged": "com.example.hdwitzys.app-merged_res-49:/layout_content_main.xml.flat",
+        "source": "com.example.hdwitzys.app-main-51:/layout/content_main.xml"
+    }
+]
